@@ -13,7 +13,13 @@ An example for our parallel Trillion-Tensor scheme.
 utils.py: basic configure
 TensorAlgebra.py: basic tensor algebra operations  
 core.py: core implementation of trillion-tensor  
-main.py: a test case for trillion-tensor    
+main.py: a test case for trillion-tensor    (also the decompress file)
+generate.py: generate large scale tensors, of which information is suppied by utils.py  
+compare.py:  evaluate the performance of our method (L2 reconstruction error)  
+compress.py: compress the large scale tensor  
+
+pipeline: write the config in utils.py -> use generate.py to generate large scale tensor -> use compress.py to compress the tensor -> use main.py to decompose the compressed tensor  -> use compare.py to evaluate the performance.  
+
 If you have any problem when running our code, please feel free to concat Zeliang (email: hust0426@gmail.com)  
 
 ## Citation  
